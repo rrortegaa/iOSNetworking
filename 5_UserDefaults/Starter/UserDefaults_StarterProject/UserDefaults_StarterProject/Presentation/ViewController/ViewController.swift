@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     
     private func displaySecret() {
         guard let text = userDefaults.string(forKey: "secret"),
-              let date = userDefaults.object(forKey: "date") as? Data else { return }
+              let date = userDefaults.object(forKey: "date") as? Date else { return }
         print("Secreto que he dejado guardado \(text)")
         print("Fecha \(date)")
     
